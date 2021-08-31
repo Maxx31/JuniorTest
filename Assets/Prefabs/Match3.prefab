@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7484115597853785121
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7484115597853785120}
+  - component: {fileID: 7484115597853785127}
+  - component: {fileID: 7484115597853785126}
+  - component: {fileID: 7484115597853785125}
+  m_Layer: 0
+  m_Name: Match3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7484115597853785120
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7484115597853785121}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 178.58354, y: 391.1259, z: -71.16512}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7484115597853785127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7484115597853785121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aaeb40837ae395b43b33ae9bd4d43be3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boardLayout:
+    rows:
+    - row: 00000000020000000000000000000000
+    - row: 02000000010000000000000000000000
+    - row: 02000000020000000000000002000000
+    - row: 01000000020000000100000001000000
+    - row: 02000000010000000200000002000000
+    - row: 02000000010000000200000002000000
+  pieces:
+  - {fileID: 21300000, guid: 2093b2781138e8d438bfa671e66fb876, type: 3}
+  - {fileID: 21300000, guid: ce20b464639e22b44b1b54711b9c9f8c, type: 3}
+  gameBoard: {fileID: 0}
+  nodePiece:
+  - {fileID: 3993713322234175970, guid: a02d38593f8dc744da97ab6dd3eb71c1, type: 3}
+  - {fileID: 5340579702119539018, guid: 26791b1320196b243b992856c987ea91, type: 3}
+--- !u!114 &7484115597853785126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7484115597853785121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c90c643a979f4541b7b7b6a6996ae19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7484115597853785125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7484115597853785121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 798cea096058e46468327301335446ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ball:
+  - {fileID: 185886680269147590, guid: 4f458f857b2291d4ab7740d9734e745c, type: 3}
+  - {fileID: 5071290421888875140, guid: 2c90aad7f7603d24c9a939a3a824832c, type: 3}
+  _spawnPlace: {fileID: 0}
+  _minSpawnTime: 2
+  _maxSpawnTime: 4.5
+  _minSpeed: 78
+  _maxSpeed: 132
+  _minSpawnPos: 0
+  _maxSpawnPos: 500
+  _minRadius: 75
+  _maxRadius: 142
+  _minFreq: 21
+  _maxFreq: 53
+  CurrentBaloons: 0
